@@ -1,0 +1,668 @@
+@charset "UTF-8";
+/*este comentario se compila*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.overflow {
+  overflow: auto; }
+
+.enLinea {
+  display: inline-block; }
+
+/* IMAGENES DE FONDO DE LOS HTML */
+.index {
+  background-image: url(../img/fondo-index-png.png);
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-color: #e38bfd;
+  padding: 0; }
+
+.historia {
+  background-image: url(../img/fondo-historia.jpeg);
+  background-repeat: none;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: #e38bfd;
+  padding: 0; }
+
+.productos {
+  background-image: url(../img/fondo-producto-png.png);
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #e38bfd;
+  padding: 0; }
+
+.galeria {
+  background-image: url(../img/fondo-contacto-png.png);
+  background-repeat: none;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: #e38bfd;
+  padding: 0; }
+
+.contactoFondo {
+  background-image: url(../img/fondo.jpeg);
+  background-repeat: none;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: #e38bfd;
+  padding: 0; }
+
+.bodyPrincipal {
+  background-image: url(../img/fondo-principal-grande.jpg);
+  background-repeat: no-repeat;
+  transition: all 250ms;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-name: zoom1;
+  overflow: hidden; }
+
+header {
+  top: 0;
+  position: sticky;
+  background-color: rgba(155, 125, 247, 0.7);
+  z-index: 100;
+  font-size: 42px;
+  height: 1.5em;
+  width: 100%; }
+  header .navegacionBarra {
+    background-color: #8859f3;
+    opacity: 90%;
+    height: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    border-radius: 7px; }
+    header .navegacionBarra .imagen1 {
+      width: 35px;
+      height: 40px; }
+    header .navegacionBarra .barraNavegacionBotones {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: all 250ms;
+      font-size: 25px; }
+      header .navegacionBarra .barraNavegacionBotones .list1 {
+        margin-left: 10px;
+        font-weight: bold;
+        list-style-type: none;
+        background-color: #ad8bfd;
+        font-family: 'Kaushan Script', cursive; }
+        header .navegacionBarra .barraNavegacionBotones .list1:hover {
+          background-color: #d188f3; }
+        header .navegacionBarra .barraNavegacionBotones .list1 .colorNav {
+          color: #FFE3FE !important; }
+          header .navegacionBarra .barraNavegacionBotones .list1 .colorNav:hover {
+            color: #ff7070 !important; }
+    header .navegacionBarra ul .dropdown-menu {
+      min-width: 100%;
+      background: rgba(156, 119, 243, 0);
+      border: none; }
+
+/* font-family: 'Rubik Moonrocks', cursive; */
+/* font-family: 'Kaushan Script', cursive; */
+/* font-family: 'Rubik Microbe', cursive; */
+/* Fuentes pantalla de ingreso */
+/* font-family: 'Macondo', cursive; */
+/* font-family: 'Lobster', cursive; */
+/* RESET */
+* {
+  margin: 0;
+  Padding: 0; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600; }
+
+.inicio {
+  font-size: 21px;
+  color: antiquewhite;
+  font-family: 'Lobster', cursive;
+  text-align: left;
+  text-decoration: none;
+  margin-right: 20px; }
+  .inicio:hover {
+    color: #5ceeee; }
+
+#miModal {
+  margin-top: 18%;
+  margin-bottom: auto; }
+  #miModal div.colorModal {
+    background-color: #bb8bf1; }
+    #miModal div.colorModal h5.tituloModal {
+      color: #FFE3FE;
+      text-transform: capitalize;
+      font-size: 35px;
+      font-family: 'Macondo', cursive; }
+    #miModal div.colorModal p.textoModal {
+      color: antiquewhite;
+      font-size: 21px;
+      font-family: 'Kaushan Script', cursive;
+      place-self: center; }
+    #miModal div.colorModal button.colorBotonModal {
+      background-color: #9646f3;
+      opacity: 75%;
+      border-radius: 20px;
+      color: antiquewhite;
+      font-size: 16px;
+      font-family: 'Kaushan Script', cursive;
+      place-self: center; }
+
+div.mainIndex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  div.mainIndex div.historiaPresentacion h2.tituloHistoria {
+    color: #ffdcdc;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: inherit;
+    font-family: 'Kaushan Script', cursive;
+    text-align: left;
+    width: 85%;
+    margin: 20px; }
+  div.mainIndex div.historiaPresentacion p.texto {
+    width: 85%;
+    margin-left: 25px; }
+  div.mainIndex .contacto {
+    color: antiquewhite;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    place-self: center;
+    text-shadow: 3px 4px 4px black; }
+  div.mainIndex .comentarios {
+    color: #FFE3FE;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: 'Macondo', cursive; }
+  div.mainIndex .loadingText {
+    color: aliceblue; }
+  div.mainIndex div.tamañoCarrusel {
+    width: 700px;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  div.mainIndex .contenidoPrincipal {
+    margin-bottom: 35px;
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr 0.8fr 1fr;
+    grid-template-areas: "index1" "index2" "index3" "index4";
+    box-shadow: 30px 27px 16px rgba(0, 0, 0, 0.779);
+    text-shadow: 2px 2px 2px black;
+    border-radius: 25px;
+    padding-top: 15px;
+    border: 3px rgba(0, 0, 0, 0.532) solid;
+    margin-top: 15px;
+    background-image: url(../img/fondo-index-png.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    div.mainIndex .contenidoPrincipal .index1 {
+      grid-area: index1; }
+    div.mainIndex .contenidoPrincipal .index2 {
+      grid-area: index2; }
+    div.mainIndex .contenidoPrincipal .index3 {
+      grid-area: index3; }
+    div.mainIndex .contenidoPrincipal .index4 {
+      grid-area: index4; }
+    div.mainIndex .contenidoPrincipal .contenidoPrincipalElemento {
+      display: inline-block;
+      padding: 30px 30px 15px 10px;
+      color: #e7ccf5;
+      font-size: 25px;
+      text-transform: capitalize;
+      text-align: center;
+      line-height: 55px;
+      font-family: 'Kaushan Script', cursive;
+      font-style: oblique;
+      line-height: inherit;
+      place-self: center; }
+    div.mainIndex .contenidoPrincipal img.logoKon {
+      width: 350px;
+      height: 300px; }
+  div.mainIndex .botonInicio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 35px 10px 0px 10px;
+    padding-right: 20px; }
+  div.mainIndex .listadoHistoria {
+    margin-bottom: 35px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "historia1 historia2" "historia3 historia4"; }
+    div.mainIndex .listadoHistoria .tituloHistoriaCont {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: inherit;
+      font-family: 'Kaushan Script', cursive;
+      text-align: left;
+      margin: 20px;
+      color: #f3aeed;
+      width: 95%; }
+    div.mainIndex .listadoHistoria .historia1 {
+      grid-area: historia1; }
+    div.mainIndex .listadoHistoria .historia2 {
+      grid-area: historia2;
+      height: 400px;
+      width: 85%;
+      margin-top: 10%;
+      margin-left: 12%; }
+    div.mainIndex .listadoHistoria .historia3 {
+      grid-area: historia3; }
+    div.mainIndex .listadoHistoria .historia4 {
+      grid-area: historia4;
+      height: 400px;
+      width: 85%;
+      margin-top: 10%;
+      margin-left: 12%; }
+  div.mainIndex .listadoProductos {
+    margin-bottom: 35px;
+    height: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img1 texto1 " "texto2 img2" "img3 texto3 " "texto4 img4";
+    align-items: center; }
+    div.mainIndex .listadoProductos .imagenProducto {
+      width: 45%;
+      margin-top: 60px;
+      margin-left: 150px;
+      border-radius: 35px;
+      place-self: center; }
+    div.mainIndex .listadoProductos .videoTitulo, div.mainIndex .listadoProductos .video {
+      color: #ffdcdc;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: inherit;
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      width: 85%;
+      margin: 20px; }
+  div.mainIndex .listadoImagenes {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    z-index: 2;
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 290px);
+    grid-template-areas: "foto1 foto1 foto4" "foto3 foto2 foto4" "foto6 foto5 foto5" "foto6 foto10 foto7" "foto9 foto10 foto12" "foto11 foto8 foto8";
+    gap: 55px; }
+    div.mainIndex .listadoImagenes a.foto1 {
+      grid-area: foto1; }
+    div.mainIndex .listadoImagenes a.foto2 {
+      grid-area: foto2; }
+    div.mainIndex .listadoImagenes a.foto3 {
+      grid-area: foto3; }
+    div.mainIndex .listadoImagenes a.foto4 {
+      grid-area: foto4; }
+    div.mainIndex .listadoImagenes a.foto5 {
+      grid-area: foto5; }
+    div.mainIndex .listadoImagenes a.foto6 {
+      grid-area: foto6; }
+    div.mainIndex .listadoImagenes a.foto7 {
+      grid-area: foto7; }
+    div.mainIndex .listadoImagenes a.foto8 {
+      grid-area: foto8; }
+    div.mainIndex .listadoImagenes a.foto9 {
+      grid-area: foto9; }
+    div.mainIndex .listadoImagenes a.foto10 {
+      grid-area: foto10; }
+    div.mainIndex .listadoImagenes a.foto11 {
+      grid-area: foto11; }
+    div.mainIndex .listadoImagenes a.foto12 {
+      grid-area: foto12; }
+  div.mainIndex .galeriaTexto {
+    font-size: 37px;
+    font-family: 'Kaushan Script', cursive;
+    color: #cfb9f8;
+    font-weight: bold;
+    padding-top: 45px;
+    text-shadow: 4px -2px 5px black; }
+  div.mainIndex .bordesFormulario {
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px #8859f3;
+    margin-top: 18px;
+    font-family: 'Macondo', cursive;
+    font-size: 18px; }
+    div.mainIndex .bordesFormulario:focus {
+      background-color: #91cdf5;
+      box-shadow: 5px 5px 5px #41aef7; }
+  div.mainIndex .botonEnviar {
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #8859f3;
+    margin-bottom: 100px;
+    padding: 5px 10px;
+    font-family: 'Macondo', cursive; }
+    div.mainIndex .botonEnviar:focus {
+      background-color: #91cdf5;
+      box-shadow: 5px 5px 5px #41aef7; }
+
+.imgGaleria {
+  width: 100%;
+  height: 100%;
+  box-shadow: 15px 15px 10px rgba(28, 78, 52, 0.7);
+  border: 5px whitesmoke solid;
+  border-radius: 20px; }
+  .imgGaleria:hover {
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+
+.videoHistoria {
+  height: 80%;
+  margin: 17% 0% 2% 15%; }
+
+.divPrincipal {
+  margin: 12%;
+  margin-top: 17%;
+  display: flex;
+  justify-content: center; }
+  .divPrincipal .animacionBuho {
+    transition: all 250ms;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-name: rotate; }
+    .divPrincipal .animacionBuho .imagenbuho1 {
+      width: 80%; }
+
+.tamañoPrincipal {
+  width: 35%;
+  margin-right: 10%;
+  text-align: -webkit-center; }
+  .tamañoPrincipal .tituloPrincipal {
+    color: antiquewhite;
+    font-family: 'Macondo', cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold; }
+  .tamañoPrincipal .parrafoBienvenida {
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    text-align: center; }
+  .tamañoPrincipal .botonPrincipal {
+    background-color: rgba(220, 107, 243, 0.5);
+    border-color: rgba(137, 43, 226, 0);
+    font-family: 'Macondo', cursive;
+    font-size: 20px;
+    font-weight: bold; }
+    .tamañoPrincipal .botonPrincipal .bloque {
+      display: block;
+      width: fit-content; }
+  .tamañoPrincipal .imagenLogo2 {
+    width: 17%; }
+
+.disclaimer {
+  display: none; }
+
+.tituloH1 {
+  font-size: 25px;
+  font-family: 'Macondo', cursive;
+  color: antiquewhite;
+  opacity: 75%;
+  text-align: center; }
+
+.video {
+  margin: 60px; }
+
+.historiaTexto {
+  font-size: 21px;
+  font-family: 'Kaushan Script', cursive;
+  color: antiquewhite;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: left;
+  text-shadow: 3px 3px 3px black; }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
+
+@keyframes zoom1 {
+  0% {
+    transform: scale(0.6); }
+  100% {
+    transform: scale(1.2); } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(350deg); }
+  50% {
+    transform: rotate(365deg); }
+  100% {
+    transform: rotate(350deg); } }
+
+strong {
+  margin: 4px; }
+
+footer.footer {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: antiquewhite;
+  background-image: linear-gradient(to right, transparent, red, transparent);
+  height: 2.5em;
+  border-top: 2px white solid;
+  font-size: 16px;
+  font-style: italic; }
+
+/* full responsive  */
+.divCarrusel {
+  font-size: 21px; }
+
+.divCarruselH {
+  font-size: 28px; }
+
+@media screen and (max-width: 992px) {
+  .imagenbuho1 {
+    width: 50%;
+    margin-top: 10%; }
+  div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+    width: 75%;
+    margin-left: 15%; }
+  .parrafoBienvenida {
+    font-size: 16px; }
+  div.tamañoPrincipal h1.tituloPrincipal {
+    font-size: 23px; }
+  div.divPrincipal div.tamañoPrincipal div.divBotonPrincipal {
+    font-size: 20px; } }
+
+@media screen and (max-width: 850px) {
+  div.mainIndex div.tamañoCarrusel {
+    width: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+    width: 80%;
+    margin-left: 15%; }
+  p.divCarrusel {
+    font-size: 16px; }
+  .divCarruselH {
+    font-size: 20px; }
+  div.mainIndex div.listadoProductos div p.video {
+    font-size: 20px; } }
+
+@media screen and (max-width: 770px) {
+  .historia3 {
+    height: 80%; }
+  .imgGaleria:hover {
+    animation-name: none;
+    animation-duration: 2s;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+  div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+    width: 85%;
+    margin-left: 15%; }
+  .d-none {
+    display: inline-block !important; }
+  div.mainIndex div.listadoHistoria .historia1 {
+    height: 80%; }
+  div.mainIndex div.listadoHistoria {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "historia1" "historia2" "historia3" "historia4"; }
+  div.mainIndex div.listadoHistoria iframe.videoHistoria {
+    margin: 25px; }
+  div.mainIndex div.listadoHistoria .historia1 {
+    place-self: center; }
+  div.mainIndex div.listadoHistoria div.historia3 {
+    place-self: center; }
+  /* haciendo galeria responsive  */
+  ul li a {
+    font-size: 1rem; }
+  div.mainIndex div.listadoImagenes {
+    grid-template-columns: 95%;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9" "foto10" "foto11" "foto12"; }
+  div.mainIndex div p.galeriaTexto {
+    font-size: 1.5rem; }
+  /* Agregando grids para productos responsive */
+  div.mainIndex div.listadoProductos div p.video {
+    font-size: 20px;
+    width: 90%;
+    margin: 20px; }
+  div.mainIndex div.listadoProductos div img.imagenProducto {
+    width: 200px;
+    margin: 0;
+    margin-top: 10px; }
+  .img1 {
+    place-self: center;
+    grid-area: img1; }
+  .img2 {
+    place-self: center;
+    grid-area: img2; }
+  .img3 {
+    place-self: center;
+    grid-area: img3; }
+  .img4 {
+    place-self: center;
+    grid-area: img4; }
+  .texto1 {
+    grid-area: texto1; }
+  .texto2 {
+    grid-area: texto2; }
+  .texto3 {
+    grid-area: texto3; }
+  .texto4 {
+    grid-area: texto4; }
+  div.mainIndex div.listadoProductos {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 0.65fr 1fr 0.65fr 1fr 0.65fr 1fr 0.65fr 1fr;
+    grid-template-areas: "img1" "texto1" "img2" "texto2" "img3" "texto3" "img4" "texto4"; }
+  a:hover {
+    color: #ff7070;
+    font-size: 1.1rem; }
+  a.inicio:hover {
+    font-size: 21px;
+    color: antiquewhite; } }
+
+@media screen and (max-width: 590px) {
+  footer.footer {
+    display: none; }
+  div.mainIndex div.tamañoCarrusel {
+    font-size: 16px;
+    width: 300px;
+    /* margin-left: 23.5%; */
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  div.mainIndex div.listadoHistoria .historia1 {
+    height: 60%; }
+  p.divCarrusel {
+    display: none; }
+  div.mainIndex div.contenidoPrincipal p.contenidoPrincipalElemento {
+    font-size: 20px; }
+  .imagenbuho1 {
+    display: none; }
+  div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px; }
+  div.tamañoPrincipal h1.tituloPrincipal {
+    font-size: 21px; }
+  div.divBotonPrincipal a.botonPrincipal {
+    font-size: 16px; } }
+
+@media screen and (max-width: 450px) {
+  div.mainIndex div.contenidoPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "index1" "index3"; }
+  .parrafoBienvenida {
+    display: none; }
+  div.mainIndex div.contenidoPrincipal p.contenidoPrincipalElemento {
+    font-size: 16px; }
+  div.mainIndex div.contenidoPrincipal img.index4 {
+    display: none; }
+  div.mainIndex div.contenidoPrincipal img.index2 {
+    display: none; } }
+
+@media screen and (max-width: 400px) {
+  div.mainIndex div.tamañoCarrusel {
+    width: 200px;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  h5.divCarruselH {
+    font-size: 16px; }
+  div.mainIndex div.listadoHistoria .historia1 {
+    width: 150px;
+    height: 300px; }
+  div.mainIndex div.listadoHistoria .historia1 {
+    display: none; }
+  div.listadoHistoria p.historiaTexto {
+    font-size: 16px; }
+  div.historiaPresentacion p.historiaTexto {
+    font-size: 16px; }
+  div.mainIndex div.listadoHistoria div.historia3 {
+    display: none; }
+  div.mainIndex div.listadoHistoria {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "historia2" "historia4"; }
+  div.mainIndex div p.galeriaTexto {
+    font-size: 16px; }
+  h2.comentarios {
+    font-size: 25px; }
+  div.mainIndex .listadoHistoria .historia2 {
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto; }
+  div.mainIndex .listadoHistoria .historia4 {
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto; } }

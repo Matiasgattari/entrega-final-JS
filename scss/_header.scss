@@ -1,0 +1,63 @@
+header {
+    top: 0;
+    position: sticky;
+    background-color: rgba(155, 125, 247, 0.7);
+    z-index: 100;
+    font-size: 42px;
+    height: 1.5em;
+    width: 100%;
+
+    .navegacionBarra {
+        background-color: rgb(136, 89, 243);
+        opacity: 90%;
+        height: 100%;
+        top: 0;
+        position: sticky;
+        z-index: 100;
+        border-radius: 7px;
+
+        .imagen1 {
+            width: 35px;
+            height: 40px;
+        }
+
+        .barraNavegacionBotones {
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: all 250ms;
+            font-size: 35px - 10px;
+
+            .list1 {
+                margin-left: 10px;
+
+                font-weight: bold;
+
+                list-style-type: none;
+                background-color: rgb(173, 139, 253);
+                font-family: 'Kaushan Script', cursive;
+
+                &:hover {
+                    background-color: rgb(209, 136, 243);
+                }
+
+                .colorNav {
+                    color: #FFE3FE !important;
+
+                    &:hover {
+                        color: rgb(255, 112, 112) !important;
+                        ;
+                    }
+                }
+            }
+        }
+
+        ul .dropdown-menu {
+            min-width: 100%;
+            background: rgba(156, 119, 243, 0);
+            border: none;
+        }
+
+    }
+}

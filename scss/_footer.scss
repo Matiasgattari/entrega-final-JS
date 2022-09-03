@@ -1,0 +1,15 @@
+strong {
+    margin: 4px;
+}
+
+footer.footer {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: $color-texto;
+    background-image: linear-gradient(to right, transparent, red, transparent);
+    height: 2.5em;
+    border-top: 2px white solid;
+    font-size: 16px;
+    font-style: italic;
+}

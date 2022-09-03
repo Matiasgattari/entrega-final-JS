@@ -1,0 +1,8 @@
+[
+{"codigo": 1, "nombre" : "Rubia", "precio":120,"cantidad":50, "unidadesPedidas":0},
+{"codigo": 2, "nombre" : "Negra", "precio":130,"cantidad":50, "unidadesPedidas":0},
+{"codigo": 3, "nombre" : "Roja", "precio":140,"cantidad":50, "unidadesPedidas":0},
+{"codigo": 4, "nombre" : "Honey", "precio":150,"cantidad":50, "unidadesPedidas":0},
+{"codigo": 5, "nombre" : "Ipa", "precio":150,"cantidad":50, "unidadesPedidas":0},
+{"codigo": 6, "nombre" : "Pale", "precio":150,"cantidad":50, "unidadesPedidas":0}
+]

@@ -1,0 +1,80 @@
+.overflow {
+    overflow: auto;
+}
+
+.enLinea {
+    display: inline-block;
+}
+
+$color-texto: antiquewhite;
+
+/* IMAGENES DE FONDO DE LOS HTML */
+
+.index {
+    background-image: url(../img/fondo-index-png.png);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+}
+
+.historia {
+    background-image: url(../img/fondo-historia.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+}
+
+.productos {
+    background-image: url(../img/fondo-producto-png.png);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+}
+
+.galeria {
+    background-image: url(../img/fondo-contacto-png.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+}
+
+.contactoFondo {
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+}
+
+.bodyPrincipal {
+    background-image: url(../img/fondo-principal-grande.jpg);
+    background-repeat: no-repeat;
+
+    transition: all 250ms;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-name: zoom1;
+
+    overflow: hidden;
+
+
+}

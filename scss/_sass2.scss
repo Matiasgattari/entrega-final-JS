@@ -1,0 +1,40 @@
+// Mixin
+
+@mixin titulo {
+    font-size: 25px;
+    font-family: 'Macondo', cursive;
+    color: $color-texto;
+    opacity: 75%;
+    text-align: center;
+}
+
+.tituloH1 {
+    @include titulo
+}
+
+// Extend 
+
+.video {
+    @extend .videoTitulo;
+    margin: 60px
+}
+
+// Maps
+
+$historiaEstilo: (
+    colorText: $color-texto,
+    tamFuente: 21px,
+    alineacion:left
+);
+
+
+.historiaTexto {
+    font-size: map-get($historiaEstilo, tamFuente);
+    font-family: 'Kaushan Script', cursive;
+    color: map-get($historiaEstilo, colorText);
+    font-weight: bold;
+    line-height: 50px;
+    text-align: map-get($historiaEstilo, alineacion);
+    text-shadow: 3px 3px 3px black;
+
+}

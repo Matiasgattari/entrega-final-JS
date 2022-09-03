@@ -1,0 +1,374 @@
+/* full responsive  */
+
+.divCarrusel {
+    font-size: 21px;
+}
+
+.divCarruselH {
+    font-size: 28px;
+}
+
+@media screen and (max-width:992px) {
+    .imagenbuho1 {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+        width: 75%;
+        margin-left: 15%;
+    }
+
+    .parrafoBienvenida {
+        font-size: 16px;
+    }
+
+    div.tamañoPrincipal h1.tituloPrincipal {
+        font-size: 23px;
+    }
+
+    div.divPrincipal div.tamañoPrincipal div.divBotonPrincipal {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    div.mainIndex div.tamañoCarrusel {
+        width: 500px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    p.divCarrusel {
+        font-size: 16px;
+    }
+
+    .divCarruselH {
+        font-size: 20px;
+    }
+
+    div.mainIndex div.listadoProductos div p.video {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    .historia3 {
+        height: 80%;
+    }
+
+    .imgGaleria:hover {
+
+        animation-name: none;
+        animation-duration: 2s;
+        animation-delay: 500ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+    }
+
+    div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+        width: 85%;
+        margin-left: 15%;
+    }
+
+    .d-none {
+        display: inline-block !important;
+    }
+
+
+
+    div.mainIndex div.listadoHistoria .historia1 {
+        height: 80%;
+    }
+
+    div.mainIndex div.listadoHistoria {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "historia1"
+            "historia2"
+            "historia3"
+            "historia4"
+        ;
+    }
+
+
+
+    div.mainIndex div.listadoHistoria iframe.videoHistoria {
+        margin: 25px;
+
+    }
+
+    div.mainIndex div.listadoHistoria .historia1 {
+        place-self: center;
+    }
+
+    div.mainIndex div.listadoHistoria div.historia3 {
+        place-self: center;
+    }
+
+    /* haciendo galeria responsive  */
+
+
+    ul li a {
+        font-size: 1rem;
+    }
+
+    div.mainIndex div.listadoImagenes {
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+            "foto9"
+            "foto10"
+            "foto11"
+            "foto12"
+        ;
+    }
+
+
+    div.mainIndex div p.galeriaTexto {
+        font-size: 1.5rem;
+    }
+
+    /* Agregando grids para productos responsive */
+    div.mainIndex div.listadoProductos div p.video {
+        font-size: 20px;
+        width: 90%;
+        margin: 20px;
+    }
+
+
+    div.mainIndex div.listadoProductos div img.imagenProducto {
+
+        width: 200px;
+        margin: 0;
+        // margin-left: 30px;
+        margin-top: 10px;
+    }
+
+
+
+    .img1 {
+        place-self: center;
+        grid-area: img1;
+    }
+
+    .img2 {
+        place-self: center;
+        grid-area: img2;
+    }
+
+    .img3 {
+        place-self: center;
+        grid-area: img3;
+    }
+
+    .img4 {
+        place-self: center;
+        grid-area: img4;
+    }
+
+    .texto1 {
+        grid-area: texto1;
+    }
+
+    .texto2 {
+        grid-area: texto2;
+    }
+
+    .texto3 {
+        grid-area: texto3;
+    }
+
+    .texto4 {
+        grid-area: texto4;
+    }
+
+    div.mainIndex div.listadoProductos {
+        display: grid;
+        grid-template-columns: 95%;
+        grid-template-rows: 0.65fr 1fr 0.65fr 1fr 0.65fr 1fr 0.65fr 1fr;
+        grid-template-areas:
+            "img1"
+            "texto1"
+            "img2"
+            "texto2"
+            "img3"
+            "texto3"
+            "img4"
+            "texto4";
+    }
+
+    a:hover {
+        color: rgb(255, 112, 112);
+        font-size: 1.1rem;
+    }
+
+    a.inicio:hover {
+        font-size: 21px;
+        color: $color-texto;
+    }
+
+}
+
+
+@media screen and (max-width:590px) {
+    footer.footer {
+        display: none;
+    }
+
+    div.mainIndex div.tamañoCarrusel {
+        font-size: 16px;
+        width: 300px;
+        /* margin-left: 23.5%; */
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    div.mainIndex div.listadoHistoria .historia1 {
+        height: 60%;
+    }
+
+    p.divCarrusel {
+        display: none;
+    }
+
+    div.mainIndex div.contenidoPrincipal p.contenidoPrincipalElemento {
+        font-size: 20px;
+    }
+
+    .imagenbuho1 {
+        display: none;
+    }
+
+    div.divBodyPrincipal div.divPrincipal div.tamañoPrincipal {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+
+    div.tamañoPrincipal h1.tituloPrincipal {
+        font-size: 21px;
+    }
+
+    div.divBotonPrincipal a.botonPrincipal {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+
+    div.mainIndex div.contenidoPrincipal {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "index1"
+            "index3"
+        ;
+    }
+
+    .parrafoBienvenida {
+        display: none;
+    }
+
+    div.mainIndex div.contenidoPrincipal p.contenidoPrincipalElemento {
+        font-size: 16px;
+
+    }
+
+    div.mainIndex div.contenidoPrincipal img.index4 {
+        display: none;
+    }
+
+    div.mainIndex div.contenidoPrincipal img.index2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    div.mainIndex div.tamañoCarrusel {
+        width: 200px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    h5.divCarruselH {
+        font-size: 16px;
+    }
+
+    div.mainIndex div.listadoHistoria .historia1 {
+        width: 150px;
+        height: 300px;
+    }
+
+    div.mainIndex div.listadoHistoria .historia1 {
+        display: none;
+    }
+
+    div.listadoHistoria p.historiaTexto {
+        font-size: 16px;
+    }
+
+    div.historiaPresentacion p.historiaTexto {
+        font-size: 16px;
+    }
+
+
+    div.mainIndex div.listadoHistoria div.historia3 {
+        display: none;
+    }
+
+    div.mainIndex div.listadoHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "historia2""historia4";
+
+    }
+
+    div.mainIndex div p.galeriaTexto {
+        font-size: 16px;
+    }
+
+    h2.comentarios {
+        font-size: 25px;
+    }
+
+    div.mainIndex .listadoHistoria .historia2 {
+        height: auto;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.mainIndex .listadoHistoria .historia4 {
+        height: auto;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
