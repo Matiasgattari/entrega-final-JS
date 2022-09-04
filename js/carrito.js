@@ -58,7 +58,7 @@ let honey = 0;
 let ipa = 0;
 let pale = 0;
 
-// while (carritoTraido !== 0 && carritoTraido !== null) 
+ 
 
 
 function recuperoUnidades () {
@@ -186,34 +186,34 @@ const cargar = async  ()=>{
                         listaProductos[0].unidadesPedidas =parseInt(cantidadPedida) + parseInt(listaProductos[0].unidadesPedidas);
                         console.log(`cantidades de 1 pedidassssssssssssssssssssssssssss`,cantidadPedida);
                         console.log(`rubiaaaaaaaaaaaaaaaaaaaaaaa`, rubia);
-                        
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                         } else
                     if (botonCarrito === boton2 ) { 
                         
                         listaProductos[1].unidadesPedidas = parseInt(cantidadPedida) + parseInt(listaProductos[1].unidadesPedidas);
                         console.log(`cantidades de 2 pedidassssssssssssssssssssssssssss`,cantidadPedida);
-                        
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                         } else      
                     if (botonCarrito === boton3 ) { 
                         
                         listaProductos[2].unidadesPedidas = parseInt(cantidadPedida) + parseInt(listaProductos[2].unidadesPedidas);
-                        
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                         } else
 
                     if (botonCarrito === boton4 ) { 
                         
                         listaProductos[3].unidadesPedidas = parseInt(cantidadPedida) + parseInt(listaProductos[3].unidadesPedidas);
-                        
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                         } else
                     if (botonCarrito === boton5 ) { 
                         
                         listaProductos[4].unidadesPedidas = parseInt(cantidadPedida) + parseInt(listaProductos[4].unidadesPedidas);
-                        
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                         } else
                     if (botonCarrito === boton6 ) { 
                         
                         listaProductos[5].unidadesPedidas = parseInt(cantidadPedida) + parseInt(listaProductos[5].unidadesPedidas);
-                        
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                         } else {
                         carrito.push(listaProductos[0]);
                         carrito.push(listaProductos[1]);
@@ -221,6 +221,7 @@ const cargar = async  ()=>{
                         carrito.push(listaProductos[3]);
                         carrito.push(listaProductos[4]);
                         carrito.push(listaProductos[5]);
+                        localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                      }
                      
              // agrego clase para ocultar el carrito cada vez que cargo producto nuevo para que se recargue al apretar "ver carrito"
@@ -300,36 +301,42 @@ function verCarrito() {
                     listaProductos[0].unidadesPedidas=0;
                     carrito[0].unidadesPedidas=0;
                     carritoContenedor.classList.add("ocultar");
+                    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                     verCarrito();
                 }
                 if (eliminarElemento.id === "eliminarElemento2") {
                     listaProductos[1].unidadesPedidas=0;
                     carrito[1].unidadesPedidas=0;
                     carritoContenedor.classList.add("ocultar");
+                    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                     verCarrito();
                 }
                 if (eliminarElemento.id === "eliminarElemento3") {
                     listaProductos[2].unidadesPedidas=0;
                     carrito[2].unidadesPedidas=0;
                     carritoContenedor.classList.add("ocultar");
+                    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                     verCarrito();
                 }
                 if (eliminarElemento.id === "eliminarElemento4") {
                     listaProductos[3].unidadesPedidas=0;
                     carrito[3].unidadesPedidas=0;
                     carritoContenedor.classList.add("ocultar");
+                    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                     verCarrito();
                 }
                 if (eliminarElemento.id === "eliminarElemento5") {
                     listaProductos[4].unidadesPedidas=0;
                     carrito[4].unidadesPedidas=0;
                     carritoContenedor.classList.add("ocultar");
+                    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                     verCarrito();
                 }
                 if (eliminarElemento.id === "eliminarElemento6") {
                     listaProductos[5].unidadesPedidas=0;
                     carrito[5].unidadesPedidas=0;
                     carritoContenedor.classList.add("ocultar");
+                    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
                     verCarrito();
                 }
     
@@ -338,7 +345,7 @@ function verCarrito() {
     };
 
 
-    localStorage.setItem("carritoStorage", JSON.stringify(carrito));
+    // localStorage.setItem("carritoStorage", JSON.stringify(carrito));
 
     // Llamo funcion de precio final del carrito
 
@@ -373,16 +380,17 @@ function verCarrito() {
 
        
         listaProductos[0].unidadesPedidas=0;
-        
+        carrito[0].unidadesPedidas=0;
         listaProductos[1].unidadesPedidas=0;
-        
+        carrito[1].unidadesPedidas=0;
         listaProductos[2].unidadesPedidas=0;
-        
+        carrito[2].unidadesPedidas=0;
         listaProductos[3].unidadesPedidas=0;
-        
+        carrito[3].unidadesPedidas=0;
         listaProductos[4].unidadesPedidas=0;
-        
+        carrito[4].unidadesPedidas=0;
         listaProductos[5].unidadesPedidas=0;
+        carrito[5].unidadesPedidas=0;
         if (carritoLocalStorage!== 0 && carritoLocalStorage !== null) {
 
             localStorage.setItem("carritoStorage",JSON.stringify(listaProductos))
